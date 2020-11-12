@@ -7,72 +7,28 @@
 //
 
 #import "ViewController.h"
-#import "Person.h"
-#import "TableViewCell.h"
+#import "TabViewController.h"
 
 @interface ViewController ()
-@property (nonatomic ,strong) NSArray *dataList;
+
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view
-    
-    
-//    [self.tableView registerClass:[TableViewCell class] forCellReuseIdentifier:@"cell"];
-    
-//    [self loadData:^(NSArray *arr) {
-//        self.dataList = arr;
-//        
-//    }];
-//    [self.tableView reloadData];
-    
+    // Do any additional setup after loading the view.
     
 }
 
+/*
+#pragma mark - Navigation
 
--(void)loadData:(void (^)(NSArray *arr))block
-{
-    dispatch_async(dispatch_get_global_queue(0, 0), ^{
-        NSLog(@"耗时操作");
-        NSMutableArray *arrs = [[NSMutableArray alloc] init];
-        for (int i = 0; i < 20; i ++) {
-            Person *p = Person.new;
-            p.age = i;
-            p.name = [@"小明" stringByAppendingFormat:@"%d",i];
-            [arrs addObject:p];
-        }
-        
-        dispatch_async(dispatch_get_main_queue(), ^{
-            NSLog(@"操作完成");
-            block(arrs);
-            
-        });
-    });
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
 }
-
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    
-    return 5;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    cell.dicName = self.dataList[indexPath.row];
-    return cell;
-    
-    
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    return 100;
-}
-
+*/
 
 @end

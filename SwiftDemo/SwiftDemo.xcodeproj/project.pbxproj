@@ -13,6 +13,7 @@
 		EB310BFC255CE22600CE503C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB310BFA255CE22600CE503C /* Main.storyboard */; };
 		EB310BFE255CE22900CE503C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB310BFD255CE22900CE503C /* Assets.xcassets */; };
 		EB310C01255CE22900CE503C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB310BFF255CE22900CE503C /* LaunchScreen.storyboard */; };
+		EB310C09255D0CA700CE503C /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB310C08255D0CA700CE503C /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EB310BFD255CE22900CE503C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB310C00255CE22900CE503C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB310C02255CE22900CE503C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB310C08255D0CA700CE503C /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EB310BF4255CE22600CE503C /* AppDelegate.swift */,
 				EB310BF6255CE22600CE503C /* SceneDelegate.swift */,
 				EB310BF8255CE22600CE503C /* ViewController.swift */,
+				EB310C08255D0CA700CE503C /* Person.swift */,
 				EB310BFA255CE22600CE503C /* Main.storyboard */,
 				EB310BFD255CE22900CE503C /* Assets.xcassets */,
 				EB310BFF255CE22900CE503C /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				EB310BF9255CE22600CE503C /* ViewController.swift in Sources */,
 				EB310BF5255CE22600CE503C /* AppDelegate.swift in Sources */,
+				EB310C09255D0CA700CE503C /* Person.swift in Sources */,
 				EB310BF7255CE22600CE503C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
