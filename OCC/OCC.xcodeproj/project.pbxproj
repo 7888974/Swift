@@ -16,7 +16,6 @@
 		EB310C29255D13B500CE503C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB310C28255D13B500CE503C /* main.m */; };
 		EB310C31255D13F900CE503C /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EB310C30255D13F900CE503C /* Person.m */; };
 		EB310C34255D231800CE503C /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EB310C33255D231800CE503C /* TableViewCell.m */; };
-		EB310C37255D43AA00CE503C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB310C36255D43AA00CE503C /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +35,6 @@
 		EB310C30255D13F900CE503C /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		EB310C32255D231800CE503C /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		EB310C33255D231800CE503C /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
-		EB310C35255D43AA00CE503C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EB310C36255D43AA00CE503C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +71,6 @@
 				EB310C17255D13B200CE503C /* AppDelegate.m */,
 				EB310C19255D13B200CE503C /* SceneDelegate.h */,
 				EB310C1A255D13B200CE503C /* SceneDelegate.m */,
-				EB310C35255D43AA00CE503C /* ViewController.h */,
-				EB310C36255D43AA00CE503C /* ViewController.m */,
 				EB310C1C255D13B200CE503C /* TabViewController.h */,
 				EB310C1D255D13B200CE503C /* TabViewController.m */,
 				EB310C32255D231800CE503C /* TableViewCell.h */,
@@ -161,7 +156,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB310C37255D43AA00CE503C /* ViewController.m in Sources */,
 				EB310C1E255D13B200CE503C /* TabViewController.m in Sources */,
 				EB310C34255D231800CE503C /* TableViewCell.m in Sources */,
 				EB310C18255D13B200CE503C /* AppDelegate.m in Sources */,

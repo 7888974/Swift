@@ -15,24 +15,29 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        [self initView];
+        [self setupView];
     }
     return self;
 }
 
--(void)initView
+-(void)setupView
 {
     self.nameLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-    self.nameLab.adjustsFontSizeToFitWidth = YES;
-    [self.contentView addSubview: self.nameLab];
+//    self.nameLab.adjustsFontSizeToFitWidth = YES;
+    self.nameLab.text = self.personModel.name;
+//    [self.contentView addSubview: self.nameLab];
     
-    self.ageLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 55, 50, 50)];
+    self.ageLab = [[UILabel alloc] initWithFrame:CGRectMake(0, 55, 200, 50)];
     self.ageLab.adjustsFontSizeToFitWidth = YES;
+//    self.ageLab.text = [NSString stringWithFormat:@"%ld",self.personModel.age];
     [self.contentView addSubview: self.ageLab];
     
-    self.dicName = [NSDictionary new];
-    self.nameLab = [self.dicName objectForKey:@"name"];
-    self.ageLab = [self.dicName objectForKey:@"age"];
+}
+
+- (void)setPersonModel:(Person *)personModel{
+    _personModel = personModel;
+    _nameLab.text = personModel.name;
+    _ageLab.text = [NSString stringWithFormat:@"年龄:%ld",personModel.age];
 }
 
 @end

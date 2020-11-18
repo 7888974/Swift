@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewCell : UITableViewCell
 
+@property (nonatomic, strong) Person *personModel;
 @property (nonatomic, strong) UILabel *nameLab;
 @property (nonatomic, strong) UILabel *ageLab;
 @property (nonatomic, strong) NSDictionary *dicName;
