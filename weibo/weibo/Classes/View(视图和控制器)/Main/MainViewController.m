@@ -11,7 +11,6 @@
 #import "DiscoverViewController.h"
 #import "MessageViewController.h"
 #import "ProfileViewController.h"
-#import "Masonry.h"
 
 @interface MainViewController ()
 @property (nonatomic, strong) UIButton *composedBtn;
