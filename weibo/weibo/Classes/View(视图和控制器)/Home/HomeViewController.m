@@ -17,6 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
+    NSDictionary *dic = @{@"user":@"yhw",@"user_name":@"yhw",@"password":@"123456",@"phone_num":@"15530328679",@"code":@""};
+    
+    NSDictionary *dic1 = @{@"phone_num":@"15530328679",@"phone":@"15530328679"};
+    
+    
+    [[NetworkTools sharedTools] request:@"phone/register" parameters:dic1];
 }
 
 /*
